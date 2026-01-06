@@ -26,7 +26,7 @@ import {
 
 // Import project screenshots
 import spokenImg from '../assets/spoken.png'
-import aiHealthcareImg from '../assets/healthcare.png'
+import aiHealthcareImg from '../assets/spoken.png'
 import openSaasImg from '../assets/open-saas.png'
 import gsapImg from '../assets/gsap.png'
 import nexusmdImg from '../assets/nexusmd.png'
