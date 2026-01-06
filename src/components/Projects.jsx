@@ -26,7 +26,7 @@ import {
 
 // Import project screenshots
 import spokenImg from '../assets/spoken.png'
-import aiHealthcareImg from '../assets/spoken.png'
+import aiHealthcareImg from '../assets/healthcare.png'
 import openSaasImg from '../assets/open-saas.png'
 import gsapImg from '../assets/gsap.png'
 import nexusmdImg from '../assets/nexusmd.png'
@@ -38,7 +38,7 @@ import mortalsoftImg from '../assets/mortalsoft.png'
 import quickaiImg from '../assets/quickai.png'
 import balancerImg from '../assets/balancer.png'
 import sophiaverseImg from '../assets/sophiaverse.png'
-import healthcareImage from '../assets/healthcareimage.png'
+// import healthcareImage from '../assets/healthcareimage.png'
 import './Projects.css'
 
 const Projects = () => {
