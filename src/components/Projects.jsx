@@ -16,6 +16,8 @@ import {
   FaCode,
   FaExternalLinkAlt,
   FaGithub,
+  FaApple,
+  FaGooglePlay,
   FaDatabase,
   FaShoppingCart,
   FaHeartbeat,
@@ -38,6 +40,17 @@ import mortalsoftImg from '../assets/mortalsoft.png'
 import quickaiImg from '../assets/quickai.png'
 import balancerImg from '../assets/balancer.png'
 import sophiaverseImg from '../assets/sophiaverse.png'
+import echelonImg from '../assets/echelon.png'
+import shopifyImg from '../assets/shopify.png'
+import florkImg from '../assets/flork-site.png'
+import teddiesImg from '../assets/teddies.png'
+import goshuinImg from '../assets/goshu.png'
+import linksbaseImg from '../assets/linksbase.png'
+import blessImg from '../assets/bless.png'
+import magicImg from '../assets/magic-sketch.png'
+import zenImg from '../assets/zen.png'
+import cropImg from '../assets/cropcare.png'
+
 // import healthcareImage from '../assets/healthcareimage.png'
 import './Projects.css'
 
@@ -56,11 +69,31 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'Nothing Tech',
+      subtitle: 'Shopify E-commerce Platform',
+      description: 'Modern e-commerce platform for Nothing tech products featuring innovative design, seamless shopping experience, product showcases, and integrated payment systems.',
+      technologies: ['Shopify', 'Liquid', 'JavaScript', 'React', 'CSS3', 'Shopify API'],
+      categories: ['Fullstack'],
+      image: shopifyImg,
+      liveLink: 'https://my.nothing.tech/',
+      githubLink: ''
+    },
+    {
+      title: 'Echelon Profile',
+      subtitle: 'Web3 Gaming Identity System',
+      description: 'Central profile system for Parallel.life gaming platform with pixel-perfect UI delivered across 3 phases. Advanced user authentication, profile customization, and enterprise-grade Web3 integration.',
+      technologies: ['Django', 'PostgreSQL', 'Web3', 'Docker', 'GCP', 'Pug'],
+      categories: ['Blockchain', 'Fullstack', 'Game'],
+      image: echelonImg,
+      liveLink: 'https://profile.echelon.io/',
+      githubLink: ''
+    },
+    {
       title: 'Spoken.io',
       subtitle: 'E-commerce Platform',
       description: 'A full-featured e-commerce platform with product catalog, shopping cart, user authentication, payment processing, and admin dashboard.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Redux', 'Stripe'],
-      category: 'Fullstack',
+      categories: ['Fullstack'],
       image: spokenImg,
       liveLink: 'https://www.spoken.io/',
       githubLink: ''
@@ -70,7 +103,7 @@ const Projects = () => {
       subtitle: 'AI Healthcare Platform',
       description: 'Advanced healthcare platform leveraging AI for medical diagnostics and patient management with AI-powered symptom checker and patient monitoring.',
       technologies: ['React', 'Node.js', 'Python', 'FastAPI', 'TensorFlow', 'PostgreSQL'],
-      category: 'AI/ML',
+      categories: ['AI/ML', 'Fullstack'],
       image: nexusmdImg,
       liveLink: 'http://nexusmd.ai',
       githubLink: ''
@@ -80,7 +113,7 @@ const Projects = () => {
       subtitle: 'Blockchain Game',
       description: 'Blockchain-based gaming platform with NFT integration, decentralized economy, and immersive gameplay featuring character NFTs and in-game marketplace.',
       technologies: ['Solidity', 'Ethereum', 'Web3.js', 'React', 'Node.js', 'IPFS'],
-      category: 'Blockchain',
+      categories: ['Blockchain', 'Game', 'Fullstack'],
       image: sophiaverseImg,
       liveLink: 'https://www.sophiaverse.ai/',
       githubLink: ''
@@ -90,7 +123,7 @@ const Projects = () => {
       subtitle: 'Fullstack App',
       description: 'Interactive cocktail recipe application with smooth GSAP animations featuring cocktail discovery, recipe details, ingredient search, and user favorites.',
       technologies: ['React', 'GSAP', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS'],
-      category: 'Fullstack',
+      categories: ['Fullstack'],
       image: gsapImg,
       liveLink: 'https://gsap-cocktail-six-snowy.vercel.app/',
       githubLink: 'https://github.com/luukogod/Gsap-Cocktail'
@@ -100,7 +133,7 @@ const Projects = () => {
       subtitle: 'Casino Game Platform',
       description: 'Blockchain-powered casino gaming platform featuring various casino games with provably fair algorithms and cryptocurrency payments.',
       technologies: ['Solidity', 'Web3.js', 'React', 'Node.js', 'WebGL', 'Phaser'],
-      category: 'Game',
+      categories: ['Game', 'Blockchain'],
       image: mortalsoftImg,
       liveLink: 'https://mortalsoft.net/',
       githubLink: 'https://github.com/luukogod/MortalSoft-Casino-game'
@@ -110,7 +143,7 @@ const Projects = () => {
       subtitle: 'SaaS Platform',
       description: 'Open-source SaaS platform with multi-tenant architecture, subscription management, and comprehensive admin dashboard for business applications.',
       technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Stripe', 'Tailwind'],
-      category: 'Fullstack',
+      categories: ['Fullstack'],
       image: openSaasImg,
       liveLink: 'https://opensaas.sh/',
       githubLink: 'https://github.com/luukogod/Open-SaaS'
@@ -120,7 +153,7 @@ const Projects = () => {
       subtitle: 'AI SaaS Platform',
       description: 'AI-powered SaaS platform offering various AI tools including content generation, image creation, code assistance, and data analysis.',
       technologies: ['React', 'FastAPI', 'Python', 'OpenAI', 'PostgreSQL', 'Redis'],
-      category: 'AI/ML',
+      categories: ['AI/ML'],
       image: quickaiImg,
       liveLink: 'https://quick-ai-gray-eight.vercel.app/',
       githubLink: 'https://github.com/luukogod/QuickAI'
@@ -130,7 +163,7 @@ const Projects = () => {
       subtitle: 'React App',
       description: 'Comprehensive healthcare management system for hospitals and clinics with patient management, appointment scheduling, and medical records.',
       technologies: ['React', 'Firebase', 'Node.js', 'Material-UI', 'Chart.js', 'Redux'],
-      category: 'Fullstack',
+      categories: ['Fullstack'],
       image: aiHealthcareImg,
       liveLink: 'https://healthcare-service-react-app.web.app/',
       githubLink: 'https://github.com/luukogod/Healthcare-React-App'
@@ -140,7 +173,7 @@ const Projects = () => {
       subtitle: 'DeFi Protocol',
       description: 'Advanced DeFi protocol for automated portfolio management and liquidity provision with smart order routing and customizable pools.',
       technologies: ['Solidity', 'Ethereum', 'Hardhat', 'TypeScript', 'React', 'GraphQL'],
-      category: 'Blockchain',
+      categories: ['Blockchain', 'Fullstack'],
       image: balancerImg,
       liveLink: 'https://balancer.fi/',
       githubLink: ''
@@ -150,7 +183,7 @@ const Projects = () => {
       subtitle: 'Blockchain & AI Platform',
       description: 'Platform combining blockchain technology with AI for synthetic asset creation and trading featuring AI-powered market prediction and DeFi integration.',
       technologies: ['Solidity', 'Python', 'React', 'FastAPI', 'Machine Learning', 'Web3'],
-      category: 'AI/ML',
+      categories: ['AI/ML', 'Blockchain'],
       image: suitheticImg,
       liveLink: 'https://www.suithetic.com/',
       githubLink: 'https://github.com/lorine93s/suithetic'
@@ -160,7 +193,7 @@ const Projects = () => {
       subtitle: 'Perpetual Trading Platform',
       description: 'Decentralized perpetual trading platform with leverage, cross-margin, and advanced trading features built for high-performance trading.',
       technologies: ['Solidity', 'Ethereum', 'Vue.js', 'Node.js', 'WebSocket', 'Redis'],
-      category: 'Blockchain',
+      categories: ['Blockchain'],
       image: veenoxImg,
       liveLink: 'https://veenox.xyz/',
       githubLink: 'https://github.com/lorine93s/Veenox---Perpetual-trading-platfom'
@@ -170,7 +203,7 @@ const Projects = () => {
       subtitle: 'AI Chatbot',
       description: 'AI-powered chatbot with blockchain integration for secure conversations and data ownership featuring NFT-based identity and encrypted messaging.',
       technologies: ['React', 'OpenAI', 'Solidity', 'IPFS', 'Node.js', 'Web3.js'],
-      category: 'AI/ML',
+      categories: ['AI/ML'],
       image: hosicoImg,
       liveLink: 'https://talk-to-hosico.vercel.app/',
       githubLink: 'https://github.com/luukogod/Hosico-AI-Chatbot'
@@ -180,16 +213,99 @@ const Projects = () => {
       subtitle: 'NFT Marketplace',
       description: 'Premium NFT marketplace featuring exclusive digital art and collectibles with auctions, bidding, and community features.',
       technologies: ['Solidity', 'Ethereum', 'Next.js', 'IPFS', 'GraphQL', 'TypeScript'],
-      category: 'Blockchain',
+      categories: ['Blockchain'],
       image: apeStoreImg,
       liveLink: 'https://ape.store/',
       githubLink: ''
+    },
+    {
+      title: 'Flork Tools',
+      subtitle: 'Solana Meme Token Platform',
+      description: 'Solana-powered meme token inspired by the beloved online webcomic featuring quirky sock puppet characters. Built with Rust, Anchor framework, and Candy Machine for NFT minting.',
+      technologies: ['Solana', 'Rust', 'Anchor', 'Candy Machine', 'Web3'],
+      categories: ['Blockchain'],
+      image: florkImg,
+      liveLink: 'https://flork-site-sooty.vercel.app/',
+      githubLink: ''
+    },
+    {
+      title: 'Teddies NFT Shop',
+      subtitle: 'Web3 NFT Ecosystem Platform',
+      description: 'Unique Web3 platform for the Teddies NFT ecosystem. Earn points, unlock badges, customize profiles, and participate in upcoming drops with programmable NFT (pNFT) technology.',
+      technologies: ['Rust', 'Anchor', 'Solana', 'pNFT', 'Web3', 'NFT Marketplace'],
+      categories: ['Blockchain'],
+      image: teddiesImg,
+      liveLink: 'https://www.playteddies.com/',
+      githubLink: ''
+    },
+    {
+      title: 'Goshuin Atlas',
+      subtitle: 'Mobile App',
+      description: 'The ultimate iOS app for cultural travel in Japan. Discover temples and shrines, explore pilgrimages, and track your goshuin collection.',
+      technologies: ['SwiftUI', 'SwiftData', 'MapKit', 'iOS'],
+      categories: ['Mobile'],
+      image: goshuinImg,
+      websiteLink: 'https://goshuinatlas.com/en',
+      appStoreLink: 'https://apps.apple.com/us/app/goshuin-atlas/id6746737093',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=app.bravostudio.A01GSAFMQ9RM9XCA33J7SGTFPF7&hl=en_IE',
+      githubLink: ''
+    },
+    {
+      title: 'Links Base',
+      subtitle: 'Static Link Manager',
+      description: 'Self-hosted, zero-config link dashboard for teams. Beautiful, searchable, and deployable anywhere with static export.',
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Magic UI'],
+      categories: ['Fullstack'],
+      image: linksbaseImg,
+      websiteLink: 'https://demo.linksbase.app/',
+      githubLink: 'https://github.com/luukogod/links-base'
+    },
+    {
+      title: 'Bless Payments',
+      subtitle: 'Fintech Mobile App',
+      description: 'Send money globally with a modern, secure mobile experience. Production apps for iOS and Android.',
+      technologies: ['React Native', 'TypeScript', 'Firebase', 'Node.js'],
+      categories: ['Mobile'],
+      image: blessImg,
+      websiteLink: 'https://blesspayments.com/',
+      appStoreLink: 'https://apps.apple.com/au/app/bless-payments-money-transfer/id6447718357',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.blesspayments.bless'
+    },
+    {
+      title: 'MagicSketch: AI & AR Drawing',
+      subtitle: 'Mobile App',
+      description: 'Transform photos into beautiful sketches with AI. Built end-to-end; 25k+ downloads.',
+      technologies: ['React Native', 'Expo', 'AI/ML', 'AR'],
+      categories: ['Mobile', 'AI/ML'],
+      image: magicImg,
+      appStoreLink: 'https://apps.apple.com/us/app/magic-sketch-by-boogie-board/id1182125825',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.lunatictech.tracetosketch'
+    },
+    {
+      title: 'ZEN Kayak',
+      subtitle: 'Mobile App for iOS and Android',
+      description: 'Find kayak launch sites with geolocation, Mapbox tracking, Algolia search, and premium subscriptions.',
+      technologies: ['React Native', 'Apollo', 'GraphQL', 'Firebase', 'Mapbox', 'Algolia', 'RevenueCat', 'Jest', 'Storybook'],
+      categories: ['Mobile'],
+      image: zenImg,
+      appStoreLink: 'https://apps.apple.com/us/app/zen-kayak/id1496639813',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.zentrailsapps.zenkayak'
+    },
+    {
+      title: 'CropCare',
+      subtitle: 'AI Plant Health Mobile App',
+      description: 'AI-powered plant disease detection with photo scan, detailed diagnosis, history, multi-language support, and Google sign-in.',
+      technologies: ['React Native', 'AI/ML', 'Firebase', 'i18n', 'Maps'],
+      categories: ['Mobile', 'AI/ML'],
+      image: cropImg,
+      appStoreLink: 'https://apps.apple.com/ua/app/cropcare/id6756093686?l=uk',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=jp.co.secondstep.cropcare&hl=en_SG'
     }
   ]
 
   const filteredProjects = activeCategory === 'All' 
     ? projects 
-    : projects.filter(project => project.category === activeCategory)
+    : projects.filter(project => Array.isArray(project.categories) && project.categories.includes(activeCategory))
   
   // Show 6 projects (2 rows of 3) initially
   const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 6)
@@ -277,17 +393,43 @@ const Projects = () => {
                           <FaGithub />
                         </div>
                       )}
-                      {project.liveLink && (
+                      {(project.websiteLink || project.liveLink) && (
                         <motion.a 
-                          href={project.liveLink} 
+                          href={project.websiteLink || project.liveLink} 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="action-link-icon"
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.9 }}
-                          title="View Live"
+                          title="Website"
                         >
                           <FaExternalLinkAlt />
+                        </motion.a>
+                      )}
+                      {project.appStoreLink && (
+                        <motion.a 
+                          href={project.appStoreLink} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="action-link-icon"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                          title="App Store"
+                        >
+                          <FaApple />
+                        </motion.a>
+                      )}
+                      {project.playStoreLink && (
+                        <motion.a 
+                          href={project.playStoreLink} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="action-link-icon"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                          title="Google Play"
+                        >
+                          <FaGooglePlay />
                         </motion.a>
                       )}
                     </div>

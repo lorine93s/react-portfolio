@@ -143,7 +143,7 @@ const Contact = () => {
               <FaGithub />
             </a>
             <a 
-              href="mailto:xsui46941@gmail.com"
+              href="mailto:milosk920125@gmail.com"
               className="footer-social-icon"
               aria-label="Email"
             >
