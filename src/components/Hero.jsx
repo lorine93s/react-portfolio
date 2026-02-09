@@ -6,7 +6,7 @@ import './Hero.css'
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0)
-  const roles = ['React Developer', 'React Native Developer', 'Mobile Engineer', 'Frontend Engineer', 'Fullstack Engineer']
+  const roles = ['React Developer', 'Frontend Engineer', 'Fullstack Engineer']
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,8 +24,8 @@ const Hero = () => {
 
   const quickStats = [
     { icon: <FaCalendar />, value: '8+', label: 'Years Experience' },
-    { icon: <SiReact />, value: '50+', label: 'React Projects' },
-    { icon: <FaMobileAlt />, value: '30+', label: 'Mobile Apps' },
+    { icon: <SiReact />, value: '30+', label: 'Fullstack Projects' },
+    { icon: <FaMobileAlt />, value: '8+', label: 'Mobile Apps' },
     { icon: <FaTasks />, value: '5+', label: 'Industries' }
   ]
 
@@ -63,7 +63,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Expert in React & React Native • Building iOS & Android Apps • Modern Web Solutions
+            Expert in Full Stack Development • Building React & Next.js frontend • Modern Web Solutions
           </motion.p>
 
           {/* Contact Links */}
@@ -74,7 +74,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.7 }}
           >
             <motion.a 
-              href="mailto:xsui46941@gmail.com"
+              href="mailto:yudantararyan09@gmail.com"
               className="contact-link-hero"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
@@ -82,7 +82,7 @@ const Hero = () => {
               <SiGmail />
             </motion.a>
             <motion.a 
-              href="http://www.linkedin.com/in/chee-kan-chan-bb6b063a0" 
+              href="https://www.linkedin.com/in/ryan-yudantara-4188643a8/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="contact-link-hero"

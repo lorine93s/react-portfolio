@@ -125,7 +125,7 @@ const Contact = () => {
           <p className="footer-copyright">© 2025 Luukogod. All rights reserved.</p>
           <div className="footer-social">
             <a 
-              href="http://www.linkedin.com/in/chee-kan-chan-bb6b063a0" 
+              href="https://www.linkedin.com/in/ryan-yudantara-4188643a8/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="footer-social-icon"
@@ -143,7 +143,7 @@ const Contact = () => {
               <FaGithub />
             </a>
             <a 
-              href="mailto:milosk920125@gmail.com"
+              href="mailto:yudantararyan09@gmail.com"
               className="footer-social-icon"
               aria-label="Email"
             >
