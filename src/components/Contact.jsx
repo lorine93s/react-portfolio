@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FaEnvelope, FaLinkedin, FaGithub, FaTelegram, FaPaperPlane } from 'react-icons/fa'
+import { FaEnvelope, FaLinkedin, FaGithub, FaPaperPlane } from 'react-icons/fa'
+import { site, mailtoHref } from '../config/site'
 import './Contact.css'
 
 const Contact = () => {
@@ -122,10 +123,12 @@ const Contact = () => {
       
       <footer className="footer">
         <div className="footer-content">
-          <p className="footer-copyright">© 2025 Luukogod. All rights reserved.</p>
+          <p className="footer-copyright">
+            © {new Date().getFullYear()} {site.copyrightOwner}. All rights reserved.
+          </p>
           <div className="footer-social">
             <a 
-              href="https://www.linkedin.com/in/ryan-yudantara-4188643a8/" 
+              href={site.linkedinUrl} 
               target="_blank" 
               rel="noopener noreferrer"
               className="footer-social-icon"
@@ -134,7 +137,7 @@ const Contact = () => {
               <FaLinkedin />
             </a>
             <a 
-              href="https://github.com/luukogod" 
+              href={site.githubUrl} 
               target="_blank" 
               rel="noopener noreferrer"
               className="footer-social-icon"
@@ -143,7 +146,7 @@ const Contact = () => {
               <FaGithub />
             </a>
             <a 
-              href="mailto:yudantararyan09@gmail.com"
+              href={mailtoHref}
               className="footer-social-icon"
               aria-label="Email"
             >

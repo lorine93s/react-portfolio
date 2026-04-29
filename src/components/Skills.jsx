@@ -56,6 +56,8 @@ import {
   SiGitlab,
   SiPytorch,
   SiOpenai,
+  SiGithubcopilot,
+  SiClaude,
   // SiOracle,
 } from 'react-icons/si'
 import { 
@@ -158,6 +160,8 @@ const Skills = () => {
       icon: <FaBrain />,
       skills: [
         { name: 'OpenAI', icon: <SiOpenai /> },
+        { name: 'GitHub Copilot', icon: <SiGithubcopilot /> },
+        { name: 'Claude', icon: <SiClaude /> },
         { name: 'PyTorch', icon: <SiPytorch /> },
         { name: 'LLM', icon: <FaBrain /> },
         { name: 'Python', icon: <SiPython /> },

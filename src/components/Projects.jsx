@@ -27,6 +27,7 @@ import {
 } from 'react-icons/fa'
 
 // Import project screenshots
+import highnoteImg from '../assets/highnote.png'
 import spokenImg from '../assets/spoken.png'
 import aiHealthcareImg from '../assets/healthcare.png'
 import openSaasImg from '../assets/open-saas.png'
@@ -68,6 +69,16 @@ const Projects = () => {
   ]
 
   const projects = [
+    {
+      title: 'Highnote',
+      subtitle: 'Unified Embedded Finance Platform',
+      description: 'Highnote is a modern, developer-centric platform for embedded finance and card issuance. Built with React, Next.js, Node.js, Python, and TypeScript, real-time payments, and unified ledger management for fintech businesses.',
+      technologies: ['React', 'Next.js', 'Node.js', 'Python', 'TypeScript', 'AWS', 'PostgreSQL'],
+      categories: ['Fullstack', 'Fintech'],
+      image: highnoteImg,
+      liveLink: 'https://highnote.com/',
+      githubLink: ''
+    },
     {
       title: 'Nothing Tech',
       subtitle: 'Shopify E-commerce Platform',

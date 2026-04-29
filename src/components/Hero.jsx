@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaEnvelope, FaTelegram, FaCalendar, FaMobileAlt, FaTasks } from 'react-icons/fa'
+import { FaCalendar, FaMobileAlt, FaTasks } from 'react-icons/fa'
 import { SiGithub, SiLinkedin, SiGmail, SiTelegram, SiReact } from 'react-icons/si'
+import { site, mailtoHref } from '../config/site'
 import './Hero.css'
 
 const Hero = () => {
@@ -14,13 +15,6 @@ const Hero = () => {
     }, 3000)
     return () => clearInterval(interval)
   }, [roles.length])
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
-  }
 
   const quickStats = [
     { icon: <FaCalendar />, value: '8+', label: 'Years Experience' },
@@ -74,7 +68,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.7 }}
           >
             <motion.a 
-              href="mailto:yudantararyan09@gmail.com"
+              href={mailtoHref}
               className="contact-link-hero"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
@@ -82,7 +76,7 @@ const Hero = () => {
               <SiGmail />
             </motion.a>
             <motion.a 
-              href="https://www.linkedin.com/in/ryan-yudantara-4188643a8/" 
+              href={site.linkedinUrl} 
               target="_blank" 
               rel="noopener noreferrer"
               className="contact-link-hero"
@@ -92,7 +86,7 @@ const Hero = () => {
               <SiLinkedin />
             </motion.a>
             <motion.a 
-              href="https://github.com/luukogod" 
+              href={site.githubUrl} 
               target="_blank" 
               rel="noopener noreferrer"
               className="contact-link-hero"
@@ -102,7 +96,7 @@ const Hero = () => {
               <SiGithub />
             </motion.a>
             <motion.a 
-              href="https://t.me/lorine93s" 
+              href={site.telegramUrl} 
               target="_blank" 
               rel="noopener noreferrer"
               className="contact-link-hero"

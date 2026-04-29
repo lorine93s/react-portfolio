@@ -81,7 +81,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Senior Frontend Engineer with <strong>6+ years</strong> of hands-on experience specializing in <strong>React</strong>, <strong>Next.js</strong>, and <strong>TypeScript</strong> and <strong>Node.js</strong> and <strong>Python</strong> for backend integration and end-to-end solution delivery.
+              Senior Full Stack Engineer with <strong>6+ years</strong> of hands-on experience specializing in <strong>React</strong>, <strong>Next.js</strong>, and <strong>TypeScript</strong> and <strong>Node.js</strong> and <strong>Python</strong> for backend integration and end-to-end solution delivery.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
